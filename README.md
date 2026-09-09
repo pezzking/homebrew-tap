@@ -8,10 +8,10 @@
 brew install --cask pezzking/tap/runwayleft
 ```
 
-The app is ad-hoc signed, not notarized, so macOS blocks the first launch of a downloaded copy. Open System Settings › Privacy & Security and choose Open Anyway, or skip the prompt by installing without the quarantine flag:
+The app is ad-hoc signed, not notarized, so macOS blocks the first launch of a downloaded copy. Either open System Settings › Privacy & Security and choose Open Anyway, or clear the quarantine flag once before launching:
 
 ```bash
-brew install --cask --no-quarantine pezzking/tap/runwayleft
+xattr -dr com.apple.quarantine /Applications/RunwayLeft.app
 ```
 
 ## Upgrade
@@ -19,6 +19,8 @@ brew install --cask --no-quarantine pezzking/tap/runwayleft
 ```bash
 brew upgrade --cask runwayleft
 ```
+
+Then clear the quarantine flag again as above. Settings carry over.
 
 ## Uninstall
 
