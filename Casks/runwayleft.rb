@@ -1,6 +1,6 @@
 cask "runwayleft" do
-  version "1.13.0"
-  sha256 "1554a61dd6fad49fac5e6f289fcd3a075daf8ee79a01d743740df99f9f6028d7"
+  version "1.13.1"
+  sha256 "0a6207a6769abc0cb252ce1af2c11a0673ec612515e48019ca644b4b82e2592d"
 
   url "https://github.com/pezzking/runwayleft/releases/download/v#{version}/RunwayLeft-#{version}.zip"
   name "RunwayLeft"
