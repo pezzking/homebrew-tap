@@ -2,13 +2,14 @@
 class Kubedog < Formula
   desc "Fast desktop app for Kubernetes clusters"
   homepage "https://github.com/pezzking/kubedog"
-  version "0.3.0"
   license "Apache-2.0"
 
   on_macos do
     depends_on arch: :arm64
-    url "https://github.com/pezzking/kubedog/releases/download/v0.3.0/kubedog-0.3.0-macos-arm64.tar.gz"
-    sha256 "1adc6700504a95af1bfaf1111c097b16719f2cf6dc3677c518254745ef6e28d9"
+    on_arm do
+      url "https://github.com/pezzking/kubedog/releases/download/v0.3.0/kubedog-0.3.0-macos-arm64.tar.gz"
+      sha256 "1adc6700504a95af1bfaf1111c097b16719f2cf6dc3677c518254745ef6e28d9"
+    end
   end
 
   on_linux do
