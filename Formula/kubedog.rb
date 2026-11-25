@@ -7,19 +7,19 @@ class Kubedog < Formula
   on_macos do
     depends_on arch: :arm64
     on_arm do
-      url "https://github.com/pezzking/kubedog/releases/download/v0.3.0/kubedog-0.3.0-macos-arm64.tar.gz"
-      sha256 "1adc6700504a95af1bfaf1111c097b16719f2cf6dc3677c518254745ef6e28d9"
+      url "https://github.com/pezzking/kubedog/releases/download/v0.3.1/kubedog-0.3.1-macos-arm64.tar.gz"
+      sha256 "15f1f102ea607e5f472a02f6c8c5eee81d6da4fc9e1cbee964e9b4036fb98643"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/pezzking/kubedog/releases/download/v0.3.0/kubedog-0.3.0-linux-amd64.tar.gz"
-      sha256 "fef471374d87c3df12b6cfffd37b6474ddceddfb0af06cf57beba5072cb1aa3c"
+      url "https://github.com/pezzking/kubedog/releases/download/v0.3.1/kubedog-0.3.1-linux-amd64.tar.gz"
+      sha256 "b30a71125eb25dea1bfc2724b087de5cfda9683cf47196f85710a49c63e95351"
     end
     on_arm do
-      url "https://github.com/pezzking/kubedog/releases/download/v0.3.0/kubedog-0.3.0-linux-arm64.tar.gz"
-      sha256 "7419203e05b136b8d7841116ed6fc7d4464d55f2547928e880bb8af328d685e2"
+      url "https://github.com/pezzking/kubedog/releases/download/v0.3.1/kubedog-0.3.1-linux-arm64.tar.gz"
+      sha256 "18518f217d0c39e3cd176dd59483ffaf30b9a74e81601695822069bc7aea7f69"
     end
   end
 
